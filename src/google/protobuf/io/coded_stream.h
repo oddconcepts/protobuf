@@ -622,9 +622,9 @@ class LIBPROTOBUF_EXPORT CodedInputStream {
   // Return the size of the buffer.
   int BufferSize() const;
 
-  static const int kDefaultTotalBytesLimit = 64 << 20;  // 64MB
+  static const int kDefaultTotalBytesLimit = 1024 << 20;  // 1024MB
 
-  static const int kDefaultTotalBytesWarningThreshold = 32 << 20;  // 32MB
+  static const int kDefaultTotalBytesWarningThreshold = 512 << 20;  // 512MB
 
   static int default_recursion_limit_;  // 100 by default.
 };
